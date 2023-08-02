@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/5_BootStrap/bootstrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="WeatherApplication.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Weather Application</title>
+</head>
+
+<body>
+    <div class="row d-flex justify-content-center img1">
+        <div class="col-4 p-4 mainDiv">
+            <div class="d-flex justify-content-between">
+                <input class="inputClass" id="inputId" type="text" placeholder="Search">
+                <button class="buttonClass" id="buttonId"><i class="bi bi-search text-white"></i></button>
+            </div>
+            <div class="Weather LoadingMsg">
+                <div class="my-3">
+                    <h3 id="idName">Weather in Denver</h3>
+                    <h3 id="idTemp">294.64°C</h3>
+                </div>
+                <div class="d-flex ">
+                    <img id="idIcon" src="https://openweathermap.org/img/wn/04n.png" alt="img">
+                    <p class="m-3" id="idDesc">Overcast Clouds</p>
+                </div>
+                <div class="my-3">
+                    <p class="m-0" id="idHumidity">Humidity: 48%</p>
+                    <p class="m-0" id="idWindSpeed">Wind Speed: 0.45km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="WeatherApplication.js"></script>
+
+
+</body>
+
+</html>

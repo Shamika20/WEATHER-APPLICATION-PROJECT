@@ -1,0 +1,45 @@
+.mainDiv {
+    background-color: black;
+    color: white;
+    margin: 175px;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+body{
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+.inputClass {
+    width: 320px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: 0px;
+    background-color: #837a7a5d;
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.buttonClass {
+    width: 40px;
+    height: 35px;
+    border-radius: 37px;
+    border: 0px;
+    background-color: #837a7a5d;
+}
+button:hover{
+    background-color: #cdc8c85d;
+}
+.Weather.LoadingMsg{
+    visibility: hidden;
+    position: relative;
+}
+.Weather.LoadingMsg::after{
+    visibility: visible;
+    content: "Loading....";
+    position: absolute;
+    top:0;
+
+}
