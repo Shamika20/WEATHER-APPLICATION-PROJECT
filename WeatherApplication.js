@@ -5,8 +5,8 @@ let weather = {
         p.then(
             (response) => {
                 // console.log(response)
-                if (!response.ok) {//since if response.ok = true then ! means not so !response.ok=false
-                    alert("Weather Not detected")//try useing catch as well after 2nd then
+                if (!response.ok) {
+                    alert("Weather Not detected")
                 }
                 return response.json()
             }
@@ -57,32 +57,4 @@ document.querySelector("#inputId").addEventListener(
     }
 )
 
-/*
-we used document.querySelector("#inputId") and not inputId.value
-becaz aagar inputId.value pe addEventListener lagaya tooo
-input ke aandar ke text koo addEventListener laag raha hai
-and hame pure input box koo lagana hai addEventListener
-so we have to get the entire element.
 
-also,
-document.querySelector("#inputId").addEventListener(
-    "keyup",
-    function(event){
-        console.log("event :- ",event)
-    }
-)
-ismai keyup haar ek key koo refer kar raha hai
-like if i am typing this sentnce all key's are refered and
-haar ek key ke liye pura addEventListener run hoo raha hai
-and so  we need to specify the specific key i.e enter.
-and observer properly in the above code when console.log("event :- ",event)
-runs event object is printed and their we have a key-value pair :- 
-key: "s" , where i pressed key s so this displayed and if i pressed another key
-that key is refered as key kee value soo,
-enter key koo refer karne ke liye event.key = "enter"
-
-Loading concept:-
-now what'a happening is when we are typing cities and when api is fetching it
-it's taking time to load and till then the baground screen is blank
-soo will apply logic for loading as well
-*/
